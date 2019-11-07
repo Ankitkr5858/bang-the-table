@@ -1,0 +1,15 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+development:
+  <<: *default
+  database: photo_sharing_development
+  username: root
+  password: root
+ 
+
+production:
+  <<: *default
+  database: photo_sharing_production
+  username: root
+  password: root
